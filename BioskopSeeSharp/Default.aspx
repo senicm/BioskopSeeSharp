@@ -6,7 +6,9 @@
 
     <h2>Dobro došli na stranicu SEE SHARP bioskopa.</h2>
 
-    <h3>Na ovoj stranici možete videti kratki prikaz filmova koje trenutno nudimo. Kako biste otvorili puni prikaz filma, kliknite na sliku ili naslov filma.</h3>
+    <h3>Na našoj internet stranici možete videti kratki prikaz filmova koje trenutno nudimo i rezervišete željena sedišta.</h3>
+
+    <h4>Sale u bioskopu SEE SHARP:</h4>
 
     <asp:ScriptManager ID="ScriptManager1" runat="server">
 
