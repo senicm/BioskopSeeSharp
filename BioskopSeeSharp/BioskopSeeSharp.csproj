@@ -1,0 +1,200 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D289178F-E623-45CF-87BE-AC02124DCE9B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BioskopSeeSharp</RootNamespace>
+    <AssemblyName>BioskopSeeSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Filmovi.aspx" />
+    <Content Include="Galerija.aspx" />
+    <Content Include="Images\Bioskop\1.jpg" />
+    <Content Include="Images\Bioskop\2.jpg" />
+    <Content Include="Images\Bioskop\3.jpg" />
+    <Content Include="Images\MovieGalleries\black swan poster\MV5BMTgzNzk1MTE3MF5BMl5BanBnXkFtZTcwMzE0NDc4Mw%40%40._V1_SX1500_CR0,0,1500,999_AL_.jpg" />
+    <Content Include="Images\MovieGalleries\black swan poster\MV5BMTM2MjAxMjg3MF5BMl5BanBnXkFtZTcwNDUyNDQ4Mw%40%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\black swan poster\MV5BMTU1MDY0NzYwMF5BMl5BanBnXkFtZTcwMDg3ODIxNA%40%40._V1_SY1000_CR0,0,1213,1000_AL_.jpg" />
+    <Content Include="Images\MovieGalleries\lh poster\MV5BNzVmOTgwMzUtMzBkYy00OWRlLWEyZDMtNjc2NjBkMjQxNTI0XkEyXkFqcGdeQXVyMTQxNzMzNDI%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\lh poster\MV5BODQ1MDUxZDQtYjIzNC00YzIwLThhZWUtYmRlZjE5NmE2YTA4XkEyXkFqcGdeQXVyMTQxNzMzNDI%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\lh poster\MV5BOTJiNGMxYmQtNWQxYS00MjBkLTgxNjEtMDU3MmY4YzFlM2I3XkEyXkFqcGdeQXVyNzM0MTUwNTY%40._V1_SY1000_CR0,0,704,1000_AL_.jpg" />
+    <Content Include="Images\MovieGalleries\requiem poster\MV5BMTgwNDU3ODk5M15BMl5BanBnXkFtZTgwNjU5OTIwMjE%40._V1_SY1000_CR0,0,1517,1000_AL_.jpg" />
+    <Content Include="Images\MovieGalleries\requiem poster\MV5BNDE4MDI0ZDktZTExYi00OGQ3LWI5MWItYzQxODJlZmQ3ODFmXkEyXkFqcGdeQXVyNjUxMjc1OTM%40._V1_SX1777_CR0,0,1777,962_AL_.jpg" />
+    <Content Include="Images\MovieGalleries\requiem poster\MV5BNzU4MDgwNTM0MV5BMl5BanBnXkFtZTgwODU5OTIwMjE%40._V1_SY1000_CR0,0,1556,1000_AL_.jpg" />
+    <Content Include="Images\MovieGalleries\spirited away poster\MV5BMTgyOTQ4NjEzNF5BMl5BanBnXkFtZTgwODY1MTMyMDE%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\spirited away poster\MV5BODUwNTE0NmEtZWJkNC00ZGQ5LTlmZjUtMjViYjMwMmJkZGNlXkEyXkFqcGdeQXVyNjc3OTE4Nzk%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\spirited away poster\MV5BZjBlMGViNGYtMWQyOS00ZTI2LWFhMmMtMmM5NDAzZmIyZjk0XkEyXkFqcGdeQXVyNjc3OTE4Nzk%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\suspiria poster\MV5BYzFlOGE4OGQtYmFjMC00YmQ4LTllMzUtZDVlY2YwY2YxYzZmXkEyXkFqcGdeQXVyNDE5MTU2MDE%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\suspiria poster\MV5BZDcyNjI1MWMtNDA5NS00Y2M5LWIwNjYtZmJiYzgyM2I0MGY2XkEyXkFqcGdeQXVyNDE5MTU2MDE%40._V1_.jpg" />
+    <Content Include="Images\MovieGalleries\suspiria poster\MV5BZTg2ZTRhODgtNWUwYi00MjRjLTgzNWMtNTdjMTk3MWVlMzQwXkEyXkFqcGdeQXVyNDE5MTU2MDE%40._V1_.jpg" />
+    <Content Include="Images\MoviePosters\black swan poster.jpg" />
+    <Content Include="Images\MoviePosters\lh poster.jpg" />
+    <Content Include="Images\MoviePosters\requiem poster.jpg" />
+    <Content Include="Images\MoviePosters\spirited away poster.jpg" />
+    <Content Include="Images\MoviePosters\suspiria poster.jpg" />
+    <Content Include="Images\stage-curtains.jpg" />
+    <Content Include="Images\Theatre-curtain.jpg" />
+    <Content Include="Rezervacija.aspx" />
+    <Content Include="Scripts\Rezervacija.js" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\FIlm.cs" />
+    <Content Include="App_Code\Korisnik.cs" />
+    <Content Include="App_Code\Metode.cs" />
+    <Content Include="App_Code\RezervacijaKlasa.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filmovi.aspx.cs">
+      <DependentUpon>Filmovi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filmovi.aspx.designer.cs">
+      <DependentUpon>Filmovi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galerija.aspx.cs">
+      <DependentUpon>Galerija.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galerija.aspx.designer.cs">
+      <DependentUpon>Galerija.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervacija.aspx.cs">
+      <DependentUpon>Rezervacija.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezervacija.aspx.designer.cs">
+      <DependentUpon>Rezervacija.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.master.cs">
+      <DependentUpon>Template.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\MoviePosters\Thumbs.db" />
+    <Content Include=".gitattributes" />
+    <None Include="packages.config" />
+    <Content Include="Template.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57053</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57053/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
